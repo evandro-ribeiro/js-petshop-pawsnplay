@@ -1,9 +1,10 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 1rem;
     padding: .5rem;
-    & p {
+    & #logo {
         display: flex;
         align-items: center;
         gap: 1rem;
@@ -24,7 +25,6 @@
     border-bottom-left-radius: 10px;
     & a {
         color: white;
-        text-decoration: none;
     }
 }
 
@@ -33,7 +33,7 @@
     flex-direction: column;
 }
 
-.hide {
+.hide, .btn_navbar {
     display: none;
 }
 
@@ -51,14 +51,35 @@
 
     .navbar {
         display: flex;
-        justify-content: start;
+        justify-content: space-between;
         position: fixed;
-        margin: 0 3rem;
+        width: 100%;
+        margin: 0;
+        padding: .5rem 7rem;
+        font-size: 20px;
+        & div {
+            display: flex;
+            & #logo {
+                font-size: 24px;
+                margin-right: 1.5rem;
+            }
+        }
+        
     }
 
     .navbar_items {
         display: flex;
         position: relative;
         gap: 2rem;
+    }
+
+    .btn_navbar {
+        display: flex;
+        background-color: white;
+        color: black;
+        padding: .75rem 1.5rem;
+        border-radius: 30px;
+        font-size: 22px;
+        text-align: center;
     }
 }
