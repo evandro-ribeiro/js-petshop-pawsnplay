@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Pet Shop</title>
 </head>
-<body>
-    <h1>TESTE INICIAL</h1>
-    <p id="paragraph"></p>
+<body style="background-color: blue;">
+    <header>
+        <nav class="navbar">
+            <p>
+                <img src="./assets/img/logo.svg" alt="PetShop Logo">
+                Paws n&apos; Play
+            </p>
+            <img id="menu_hamburguer" src="./assets/img/menu_hamburguer.svg" alt="Navigation Menu">
+            <ul class="navbar_items">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li id="close_menu">Close Menu</li>
+            </ul>
+        </nav>
+    </header>
+
     <script type="module" src="./assets/js/index.js"></script>
 </body>
 </html>
