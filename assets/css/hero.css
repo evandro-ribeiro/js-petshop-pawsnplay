@@ -1,0 +1,44 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../img/dog_hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 80vh;
+
+  & h1,
+  p {
+    padding: 0 1.5rem;
+    width: 95%;
+  }
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+
+.hero p {
+  margin-bottom: 1rem;
+}
+
+.btn_primary {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 1.5rem;
+  font-size: 1.2rem;
+  border: 1px solid white;
+  border-radius: 2rem;
+  width: 45%;
+  height: 4rem;
+  & img {
+    width: 12%;
+    margin-left: 1rem;
+  }
+}
