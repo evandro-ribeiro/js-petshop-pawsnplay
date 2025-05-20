@@ -1,23 +1,23 @@
 .hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-image: url("../img/dog_hero.png");
+  justify-content: end;
+  background-image: url("../img/dog_hero_mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   color: white;
-  height: 80vh;
+  height: 100vh;
+  overflow: hidden;
 
   & h1,
   p {
     padding: 0 1.5rem;
-    width: 95%;
+    width: 90%;
   }
 }
 
 .hero h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: 1rem 0;
   font-weight: 400;
 }
@@ -40,5 +40,11 @@
   & img {
     width: 12%;
     margin-left: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    background-image: url("../img/dog_hero.png");
   }
 }
