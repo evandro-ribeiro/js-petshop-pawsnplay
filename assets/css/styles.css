@@ -13,7 +13,7 @@
 .btn_secundary {
   background: linear-gradient(#101828, #233250);
   color: white;
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
 }
 
 .line {
@@ -25,4 +25,7 @@
   padding-left: 1rem;
   display: flex;
   gap: 1rem;
+  & h2 {
+    font-weight: normal;
+  }
 }
