@@ -1,85 +1,91 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  top: 1rem;
+  z-index: 2;
+  & #logo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 1rem;
-    padding: .5rem;
-    & #logo {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        font-weight: bold;
-        color: white;
-        font-size: 18px;
-    }
+    gap: 1rem;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+  }
 }
 
 .navbar_items {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    list-style: none;
-    padding: 2rem;
-    gap: .2rem;
-    border-bottom-left-radius: 10px;
-    & a {
-        color: white;
-    }
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  list-style: none;
+  padding: 2rem;
+  gap: 0.2rem;
+  border-radius: 1rem;
+  & a {
+    color: white;
+  }
 }
 
 .active {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.hide, .btn_navbar {
-    display: none;
+.hide,
+.btn_navbar {
+  display: none;
 }
 
 #close_menu {
-    background-color: aqua;
-    padding: .3rem;
-    border-radius: 10px;
-    margin-top: 1rem;
+  background-color: aqua;
+  color: black;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 1024px) {
-    #menu_hamburguer, #close_menu {
-        display: none;
-    }
+  #menu_hamburguer,
+  #close_menu {
+    display: none;
+  }
 
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
-        width: 100%;
-        margin: 0;
-        padding: .5rem 7rem;
-        font-size: 20px;
-        & div {
-            display: flex;
-            & #logo {
-                font-size: 24px;
-                margin-right: 1.5rem;
-            }
-        }
-        
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem 7rem;
+    font-size: 1.2rem;
+    & div {
+      display: flex;
+      & #logo {
+        font-size: 1.5rem;
+        margin-right: 1.5rem;
+      }
     }
+  }
 
-    .navbar_items {
-        display: flex;
-        position: relative;
-        gap: 2rem;
-    }
+  .navbar_items {
+    display: flex;
+    position: relative;
+    gap: 2rem;
+  }
 
-    .btn_navbar {
-        display: flex;
-        background-color: white;
-        color: black;
-        padding: .75rem 1.5rem;
-        border-radius: 30px;
-        font-size: 22px;
-        text-align: center;
-    }
+  .btn_navbar {
+    display: flex;
+    background-color: white;
+    color: black;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
