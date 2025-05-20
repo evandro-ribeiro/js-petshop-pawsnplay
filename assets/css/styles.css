@@ -1,9 +1,28 @@
 @import url("navbar.css");
 @import url("hero.css");
+@import url("shop.css");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.btn_secundary {
+  background: linear-gradient(#101828, #233250);
+  color: white;
+  border-radius: 0.3rem;
+}
+
+.line {
+  width: 90%;
+  margin: auto;
+}
+
+.section_title {
+  padding-left: 1rem;
+  display: flex;
+  gap: 1rem;
 }
