@@ -75,6 +75,7 @@
 
   .navbar_items {
     display: flex;
+    background-color: transparent;
     position: relative;
     gap: 2rem;
   }
