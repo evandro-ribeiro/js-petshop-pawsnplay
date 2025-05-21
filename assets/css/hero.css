@@ -52,11 +52,10 @@
     background-image: url("../img/dog_hero.png");
     background-size: cover;
     background-repeat: no-repeat;
-    padding-left: 3rem;
 
     & h1,
     p {
-      padding: 0.5rem 1.5rem;
+      padding: 0.5rem 1.5rem 0.5rem 5rem;
       width: 50%;
     }
 
@@ -73,6 +72,6 @@
 
   .btn_primary {
     width: 13%;
-    margin: 1.5rem 1rem;
+    margin: 1.5rem 1rem 1.5rem 5rem;
   }
 }

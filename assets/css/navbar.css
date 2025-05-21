@@ -5,7 +5,7 @@
   position: fixed;
   padding: 0.5rem 1.5rem;
   width: 100%;
-  top: 1rem;
+  top: 0;
   z-index: 2;
   & #logo {
     display: flex;
@@ -50,7 +50,15 @@
   margin-top: 1rem;
 }
 
-@media (min-width: 1024px) {
+.blur_with_scroll {
+  backdrop-filter: blur(0.5rem);
+}
+
+.background_navbar_with_scroll {
+  background-color: #002b46;
+}
+
+@media (min-width: 1440px) {
   #menu_hamburguer,
   #close_menu {
     display: none;
