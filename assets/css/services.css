@@ -47,3 +47,30 @@
   grid-area: adoption;
   background-image: url("../img/services/services-5-mobile.png");
 }
+
+@media (min-width: 1024px) {
+  .service_list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "grooming boarding adoption"
+      "veterinary training adoption";
+    width: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    margin: 2rem auto;
+    & li {
+      height: 100%;
+      min-height: 30vh;
+      font-size: 2.5rem;
+    }
+  }
+
+  .adoption {
+    background-image: url("../img/services/services-5.png");
+  }
+
+  #services {
+    margin-bottom: 6rem;
+  }
+}
