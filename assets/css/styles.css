@@ -2,10 +2,16 @@
 @import url("hero.css");
 @import url("shop.css");
 @import url("services.css");
+@import url("about_us.css");
 
 @font-face {
   font-family: "Formative Trial";
   src: url("../fonts/Formative\ Trial\ Medium.woff2");
+}
+
+@font-face {
+  font-family: "Formative Trial Light";
+  src: url("../fonts/Formative\ Trial\ Light.woff2");
 }
 
 * {

@@ -1,0 +1,12 @@
+.about_text {
+  width: 90%;
+  margin: auto;
+  padding: 1.5rem 0;
+  color: #667085;
+  line-height: 100%;
+  font-size: 1rem;
+  & p {
+    margin-bottom: 1rem;
+    font-family: "Formative Trial Light", Arial, sans-serif;
+  }
+}
