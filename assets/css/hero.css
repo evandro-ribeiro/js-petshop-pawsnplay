@@ -47,7 +47,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .hero {
     background-image: url("../img/dog_hero.png");
     background-size: cover;

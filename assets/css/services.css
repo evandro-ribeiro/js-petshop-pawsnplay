@@ -48,7 +48,7 @@
   background-image: url("../img/services/services-5-mobile.png");
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .service_list {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
