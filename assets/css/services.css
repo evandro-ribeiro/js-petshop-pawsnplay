@@ -1,0 +1,49 @@
+.service_list {
+  display: grid;
+  grid-template-areas:
+    "grooming boarding"
+    "veterinary training"
+    "adoption adoption";
+  gap: 0.5rem;
+  margin: 1.5rem 1rem 4rem 1rem;
+
+  & li {
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    border-radius: 0.3rem;
+    color: white;
+    font-size: 1.5rem;
+  }
+}
+
+.grooming {
+  grid-area: grooming;
+  background-image: url("../img/services/services-1.png");
+}
+
+.boarding {
+  grid-area: boarding;
+  background-image: url("../img/services/services-2.png");
+}
+
+.veterinary {
+  grid-area: veterinary;
+  background-image: url("../img/services/services-3.png");
+}
+
+.training {
+  grid-area: training;
+  background-image: url("../img/services/services-4.png");
+  background-position: bottom;
+}
+
+.adoption {
+  grid-area: adoption;
+  background-image: url("../img/services/services-5-mobile.png");
+}
