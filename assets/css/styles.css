@@ -3,6 +3,7 @@
 @import url("shop.css");
 @import url("services.css");
 @import url("about_us.css");
+@import url("blog.css");
 
 @font-face {
   font-family: "Formative Trial";
@@ -27,6 +28,7 @@
   background: linear-gradient(#101828, #233250);
   color: white;
   border-radius: 0.5rem;
+  border: none;
 }
 
 .line {

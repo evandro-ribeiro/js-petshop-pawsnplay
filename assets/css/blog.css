@@ -1,0 +1,72 @@
+.blog_content {
+  width: 90%;
+  height: fit-content;
+  margin: auto;
+  & p {
+    font-family: "Formative Trial Light", Arial, sans-serif;
+    color: #667085;
+    line-height: 160%;
+    padding: 0.5rem 0;
+  }
+  & hr {
+    opacity: 0.3;
+  }
+  & h3 {
+    line-height: 220%;
+  }
+
+  & .blog_first_title {
+    padding: 1rem 0;
+  }
+
+  & .btn_secundary {
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    font-family: "Formative Trial Light", Arial, sans-serif;
+  }
+}
+
+@media (min-width: 1440px) {
+  .blog_container {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    margin: 4rem auto;
+    width: 90%;
+    height: 60vh;
+
+    & img {
+      width: 42%;
+      height: fit-content;
+    }
+  }
+
+  .blog_content {
+    margin: 0;
+    width: 50%;
+
+    & .blog_first_title {
+      padding: 0 0 3rem 0;
+      font-size: 2rem;
+    }
+
+    & .blog_second_title {
+      padding-top: 1rem;
+    }
+
+    & h3 {
+      line-height: 100%;
+    }
+
+    & p {
+      line-height: 155%;
+      padding: 1.5rem 0;
+    }
+
+    & .btn_secundary {
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1rem;
+      margin: 1.5rem 0;
+    }
+  }
+}
