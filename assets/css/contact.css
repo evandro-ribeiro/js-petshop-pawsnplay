@@ -1,0 +1,115 @@
+#contact {
+  background-color: #101828;
+  color: white;
+  padding: 1rem 0.5rem;
+
+  & .line {
+    opacity: 0.2;
+  }
+}
+
+.contact_card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 42%;
+  & h3 {
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+  & p {
+    color: #cecece;
+    font-family: "Formative Trial Light", Arial, sans-serif;
+    font-size: 0.65rem;
+  }
+  & a {
+    color: white;
+    font-size: 0.65rem;
+  }
+}
+
+.contact_address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  flex-wrap: wrap;
+  font-style: normal;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.63781rem 1.31025rem;
+  margin: 0 0.5rem;
+  align-items: center;
+  gap: 1.3rem;
+  border-radius: 0.65513rem;
+  align-self: stretch;
+  background-color: white;
+  color: #344054;
+
+  & .btn_secundary {
+    padding: 1rem 0;
+    width: 100%;
+  }
+  & div {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.3rem;
+    align-self: stretch;
+  }
+  & label {
+    display: flex;
+    width: 9.17163rem;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.25rem;
+    font-size: 0.6rem;
+
+    & input,
+    textarea {
+      width: 100%;
+      border-radius: 0.35rem;
+      border: 0.05rem solid #d0d5dd;
+      box-shadow: 0 0.05rem 0.1rem 0 rgba(16, 24, 40, 0.05);
+      font-size: 0.65rem;
+      line-height: 150%;
+    }
+
+    & textarea {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.4rem 0.55rem;
+      height: 10vh;
+    }
+
+    & input {
+      padding: 0.5rem 0.65rem;
+    }
+  }
+
+  .form_checkbox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 0;
+    align-items: center;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    color: #667085;
+
+    & > input {
+      width: 1rem;
+      margin-right: 0.3rem;
+    }
+
+    & a {
+      text-decoration: underline;
+      color: #667085;
+    }
+  }
+}
