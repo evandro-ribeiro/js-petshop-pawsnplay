@@ -31,5 +31,38 @@
     display: flex;
     justify-content: center;
     gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .team_list {
+    gap: 2rem;
+    margin: 3rem 0;
+    & li {
+      width: 19%;
+    }
+  }
+
+  .team_card {
+    text-align: start;
+
+    & h4 {
+      font-size: 1.2rem;
+      padding-top: 1rem;
+    }
+    & p {
+      font-size: 1rem;
+      padding: 0.2rem 0 1rem 0;
+    }
+
+    & footer {
+      justify-content: start;
+      gap: 1rem;
+      & svg {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
   }
 }
