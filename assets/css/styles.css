@@ -70,8 +70,13 @@
     flex-direction: column;
   }
 
-  /* Troca a posição da seção blog para a última posição antes do footer */
+  /* Troca a posição da seção blog para a posição antes da seção de contato */
   .section:nth-child(4) {
     order: 1;
+  }
+
+  /* Coloca a seção de contato logo antes do footer */
+  .section:nth-child(6) {
+    order: 2;
   }
 }

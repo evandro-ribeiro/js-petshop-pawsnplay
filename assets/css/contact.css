@@ -113,3 +113,87 @@
     }
   }
 }
+
+.line_footer {
+  width: 100%;
+  opacity: 0.5;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.6rem;
+}
+
+@media (min-width: 1440px) {
+  .contact_container {
+    flex-direction: row;
+    gap: 4rem;
+    width: 80rem;
+    padding: 0 2rem;
+    margin: 4rem auto;
+  }
+
+  .contact_section:nth-child(1) {
+    order: 1;
+  }
+
+  .contact_form {
+    width: 70%;
+    padding: 2.5rem 2rem;
+    gap: 1.5rem;
+
+    & label {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+
+      & input,
+      textarea {
+        font-size: 1rem;
+      }
+    }
+    .form_checkbox {
+      font-size: 1rem;
+    }
+  }
+
+  .contact_address {
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+    padding: 1.5rem 0;
+    flex-wrap: wrap;
+    font-style: normal;
+  }
+
+  .contact_card {
+    gap: 1rem;
+    width: 46%;
+    margin-bottom: 1rem;
+    & h3 {
+      font-size: 1.25rem;
+      line-height: 150%;
+    }
+    & p,
+    a {
+      font-size: 1rem;
+      line-height: 150%;
+    }
+    & svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  #contact {
+    padding: 1rem 0;
+  }
+
+  .line_footer {
+    margin-bottom: 3rem;
+  }
+}
