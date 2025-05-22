@@ -63,4 +63,14 @@
   button {
     cursor: pointer;
   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Troca a posição da seção blog para a última posição antes do footer */
+  .section:nth-child(4) {
+    order: 1;
+  }
 }
