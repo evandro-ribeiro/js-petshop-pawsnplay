@@ -1,9 +1,3 @@
-#shop {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
 .product_list {
   display: flex;
   flex-direction: column;

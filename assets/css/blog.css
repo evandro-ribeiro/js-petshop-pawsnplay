@@ -1,9 +1,3 @@
-#blog {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
 .blog_content {
   & p {
     font-family: "Formative Trial Light", Arial, sans-serif;

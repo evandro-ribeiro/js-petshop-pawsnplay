@@ -60,6 +60,17 @@
 #about,
 #blog,
 #team,
+#contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+#shop,
+#services,
+#about,
+#blog,
+#team,
 #contact,
 #newsletter,
 .footer_nav,
