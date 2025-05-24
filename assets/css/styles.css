@@ -39,11 +39,32 @@
   align-items: center;
   gap: 0.94rem;
   padding-bottom: 0.62rem;
-  border-bottom: 0.2px solid rgba(206, 206, 206, 0.3);
+  width: 22.375rem;
+  border-bottom: 0.2px solid rgba(0, 0, 0, 0.3);
 
   & h2 {
     font-weight: normal;
+    color: #101828;
+    font-size: 1.25rem;
+    line-height: 100%;
   }
+
+  & > svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+#shop,
+#services,
+#about,
+#blog,
+#team,
+#contact,
+#newsletter,
+.footer_nav,
+.footer_social {
+  padding: 2.5rem 1rem;
 }
 
 @media (min-width: 1440px) {
