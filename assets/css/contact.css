@@ -1,25 +1,40 @@
 #contact {
   background-color: #101828;
   color: white;
+
+  & .section_title {
+    border-bottom: 0.2px solid rgba(206, 206, 206, 0.3);
+
+    & > h2 {
+      color: #fff;
+    }
+  }
 }
 
 .contact_card {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  width: 42%;
+  gap: 0.66rem;
+  width: 10.5rem;
+
+  & h3,
+  p,
+  a {
+    line-height: 150%;
+  }
+
   & h3 {
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 0.82rem;
   }
   & p {
     color: #cecece;
     font-family: "Formative Trial Light", Arial, sans-serif;
-    font-size: 0.65rem;
+    font-size: 0.66rem;
   }
   & a {
     color: white;
-    font-size: 0.65rem;
+    font-size: 0.66rem;
   }
 }
 
@@ -27,28 +42,43 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
-  padding: 1.5rem 0;
+  gap: 1.97rem;
   flex-wrap: wrap;
   font-style: normal;
+}
+
+.contact_card_container {
+  display: flex;
+  gap: 1.31rem;
+  width: 100%;
 }
 
 .contact_form {
   display: flex;
   flex-direction: column;
-  padding: 1.63781rem 1.31025rem;
-  margin: 0 0.5rem;
+  padding: 1.64rem 1.31rem;
   align-items: center;
-  gap: 1.3rem;
-  border-radius: 0.65513rem;
+  gap: 1.31rem;
+  border-radius: 0.66rem;
   align-self: stretch;
   background-color: white;
   color: #344054;
 
   & .btn_secundary {
-    padding: 1rem 0;
+    padding: 0.82rem 0;
+    font-size: 0.66rem;
+    line-height: 150%;
     width: 100%;
   }
+}
+
+.contact_form_inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.98rem;
+  width: 100%;
+
   & div {
     display: flex;
     align-items: flex-start;
@@ -57,12 +87,11 @@
   }
   & label {
     display: flex;
-    width: 9.17163rem;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     gap: 0.25rem;
-    font-size: 0.6rem;
+    font-size: 0.58rem;
 
     & input,
     textarea {
@@ -86,26 +115,25 @@
       padding: 0.5rem 0.65rem;
     }
   }
+}
 
-  .form_checkbox {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 0;
-    align-items: center;
-    font-size: 0.7rem;
-    line-height: 1rem;
-    color: #667085;
+#form_checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: 400;
+  line-height: 1rem;
+  color: #667085;
 
-    & > input {
-      width: 1rem;
-      margin-right: 0.3rem;
-    }
+  & > input {
+    width: 0.82rem;
+    margin-right: 0.49rem;
+  }
 
-    & a {
-      text-decoration: underline;
-      color: #667085;
-    }
+  & u {
+    font-family: "Formative Trial", Arial, sans-serif;
   }
 }
 
@@ -114,7 +142,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.6rem;
+  gap: 2.62rem;
 }
 
 @media (min-width: 1440px) {
@@ -179,9 +207,5 @@
 
   #contact {
     padding: 1rem 0;
-  }
-
-  .line_footer {
-    margin-bottom: 3rem;
   }
 }

@@ -1,13 +1,7 @@
 .footer {
   background-color: #101828;
   color: white;
-  padding: 2.5rem 0.88rem 2.5rem 0.81rem;
-  border-top: 1px solid #cecece;
-
-  & > hr {
-    width: 100%;
-    opacity: 0.3;
-  }
+  border-top: 0.2px solid rgba(206, 206, 206, 0.3);
 }
 
 #newsletter {
@@ -33,45 +27,38 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.9375rem;
-  margin-bottom: 2.5rem;
+  gap: 0.94rem;
 
   & input,
   button {
     width: 100%;
     height: 2.5rem;
     border-radius: 0.45rem;
+    box-shadow: 0 0.1rem 0.3rem 0 rgba(16, 24, 40, 0.05);
+    font-size: 0.88rem;
+    line-height: 150%;
   }
 
   & input {
-    border: 0.05rem solid #d0d5dd;
     background: #dedede;
-    box-shadow: 0px 0.883px 1.766px 0px rgba(16, 24, 40, 0.05);
-    padding: 0.55rem 0.77rem;
     color: #667085;
-    font-size: 0.88319rem;
-    line-height: 150%;
+    border: 0.05rem solid #d0d5dd;
+    padding: 0.55rem 0.77rem;
   }
 
   & button {
     display: flex;
-    padding: 0.552rem 7.80625rem;
     justify-content: center;
     align-items: center;
-    gap: 0.44163rem;
-    border: 0.883px solid var(--Gray-300, #d0d5dd);
+    padding: 0.55rem 7.8rem;
+    border: 0.1rem solid #d0d5dd;
     background-color: #fff;
-
     color: #344054;
-    font-size: 0.88319rem;
-    line-height: 150%;
     font-weight: 600;
   }
 }
 
 .footer_nav {
-  padding: 2.5rem 0;
-
   & > p {
     color: #cecece;
     font-size: 1rem;
@@ -85,7 +72,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 22.4375rem;
-  gap: 1.875rem 2.8125rem;
+  gap: 1.88rem 2.82rem;
 
   & ul {
     display: flex;
@@ -96,7 +83,7 @@
     & li {
       &:nth-child(1) {
         padding-bottom: 0.25rem;
-        font-size: 0.875rem;
+        font-size: 0.88rem;
         line-height: 1.25rem;
       }
       & > a {
@@ -123,8 +110,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.625rem;
-  padding-top: 1.25rem;
+  gap: 0.62rem;
+  padding: 0 0.88rem 2.5rem 0.88rem;
+  /* border-top: 0.2px solid rgba(206, 206, 206, 0.3); */
+
+  & hr {
+    border: 0.2px solid rgba(206, 206, 206, 0.3);
+    width: 100%;
+  }
 
   & > p {
     color: #cecece;
@@ -132,6 +125,8 @@
     font-family: "Formative Trial Light", Arial, sans-serif;
     font-size: 1rem;
     line-height: 150%;
+
+    padding-top: 0.63rem; /* Para colocar o hr igual o figma, foi necessário fazer 1.25 - 0.62 */
   }
 
   & > ul {
