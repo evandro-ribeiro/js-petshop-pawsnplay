@@ -1,32 +1,47 @@
+#blog {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
 .blog_content {
-  width: 90%;
-  height: fit-content;
-  margin: auto;
   & p {
     font-family: "Formative Trial Light", Arial, sans-serif;
     color: #667085;
     line-height: 160%;
-    padding: 0.5rem 0;
+    padding-top: 0.62rem;
+    font-size: 0.9375rem;
   }
   & hr {
     opacity: 0.3;
   }
   & h3 {
-    line-height: 220%;
-    font-weight: normal;
-    font-size: 1.2rem;
     color: #101828;
+    font-size: 1.25rem;
+    font-weight: normal;
+    letter-spacing: -0.025rem;
   }
 
   & .blog_first_title {
-    padding: 1rem 0;
+    line-height: 220%;
+    border-bottom: 1px solid #eaecf0;
+    padding-bottom: 0.94rem;
+  }
+
+  & .blog_second_title {
+    line-height: 160%;
   }
 
   & .btn_secundary {
     padding: 0.5rem 1rem;
-    margin: 1rem 0;
+    margin-top: 0.94rem;
     font-family: "Formative Trial Light", Arial, sans-serif;
   }
+}
+
+u {
+  text-decoration: underline;
+  font-family: "Formative Trial Light", Arial, sans-serif;
 }
 
 @media (min-width: 1440px) {

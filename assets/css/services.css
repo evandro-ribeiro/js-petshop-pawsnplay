@@ -1,11 +1,16 @@
+#services {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
 .service_list {
   display: grid;
   grid-template-areas:
     "grooming boarding"
     "veterinary training"
     "adoption adoption";
-  gap: 0.5rem;
-  margin: 1.5rem 1rem 4rem 1rem;
+  gap: 0.44rem;
 
   & li {
     height: 12rem;
