@@ -1,7 +1,8 @@
 .footer {
   background-color: #101828;
   color: white;
-  padding: 1.5rem 0.88rem 2.5rem 0.81rem;
+  padding: 2.5rem 0.88rem 2.5rem 0.81rem;
+  border-top: 1px solid #cecece;
 
   & > hr {
     width: 100%;
