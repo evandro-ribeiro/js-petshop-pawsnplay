@@ -13,17 +13,9 @@ li_close_menu.addEventListener("click", () => {
 });
 // Colocar backgroud-color e blur na navbar quando faz scroll
 const navbar = document.querySelector(".navbar");
+const heroSize = document.querySelector(".hero");
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) {
-        navbar.classList.add("blur_with_scroll");
-        if (window.scrollY > 700) {
-            navbar.classList.add("background_navbar_with_scroll");
-        }
-        else {
-            navbar.classList.remove("background_navbar_with_scroll");
-        }
-    }
-    if (window.scrollY < 100) {
-        navbar.classList.remove("blur_with_scroll");
-    }
+    window.pageYOffset > heroSize.offsetHeight - 80
+        ? navbar.classList.add("background_navbar_with_scroll")
+        : navbar.classList.remove("background_navbar_with_scroll");
 });
