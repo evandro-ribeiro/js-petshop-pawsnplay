@@ -24,6 +24,7 @@
 
   & .blog_second_title {
     line-height: 160%;
+    padding-top: 1.25rem;
   }
 
   & .btn_secundary {
@@ -59,7 +60,9 @@ u {
 
     & .blog_first_title {
       padding: 0 0 3rem 0;
-      font-size: 2.2rem;
+      font-size: 2.25rem;
+      line-height: 2.75rem;
+      letter-spacing: -0.045rem;
     }
 
     & .blog_second_title {
@@ -67,19 +70,34 @@ u {
     }
 
     & h3 {
-      line-height: 100%;
       font-size: 1.5rem;
     }
 
     & p {
       line-height: 155%;
       padding: 1.5rem 0;
+      font-size: 1.125rem;
     }
 
     & .btn_secundary {
-      padding: 0.75rem 1.5rem;
-      font-size: 1.1rem;
+      padding: 1.25rem 1.56rem;
+      font-size: 1.25rem;
       margin: 1.5rem 0;
+      line-height: 100%;
+    }
+  }
+
+  .blog_container_content {
+    display: flex;
+    width: 80rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+
+    margin-top: 2.75rem;
+
+    & > img {
+      height: 40.5625rem;
     }
   }
 }
