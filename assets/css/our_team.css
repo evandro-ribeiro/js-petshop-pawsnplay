@@ -47,11 +47,16 @@
 }
 
 @media (min-width: 1440px) {
+  #team > .section_title {
+    margin-bottom: 2.75rem;
+  }
+
   .team_list {
     gap: 2rem;
-    margin: 3rem 0;
+    width: 80rem;
+    padding: 0rem 2rem;
     & li {
-      width: 19%;
+      width: fit-content;
     }
   }
 
@@ -59,11 +64,13 @@
     text-align: start;
 
     & h4 {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       padding-top: 1rem;
+      line-height: 150%;
+      color: #101828;
     }
     & p {
-      font-size: 1rem;
+      font-size: 1.125rem;
       padding: 0.2rem 0 1rem 0;
     }
 
