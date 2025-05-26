@@ -78,10 +78,21 @@
 }
 
 @media (min-width: 1440px) {
+  #shop,
+  #services,
+  #about,
+  #blog,
+  #team,
+  #contact,
+  #newsletter,
+  .footer_nav {
+    padding: 4.38rem 5rem;
+  }
+
   .section_title {
-    padding: 2rem 1.5rem 0.5rem 5rem;
     & h2 {
-      font-size: 2rem;
+      font-size: 2.19rem;
+      line-height: 100%;
     }
     & svg {
       height: 2rem;

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.0625rem;
+  gap: 1.06rem;
   width: 22.375rem;
 
   & li > img {
@@ -47,57 +47,91 @@
   line-height: 100%;
 }
 
+.shop_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
 .hide_mobile {
   display: none;
 }
 
 @media (min-width: 1440px) {
   .shop_header {
+    margin-bottom: 1.25rem;
     & > svg {
       display: none;
     }
   }
 
-  .shop_products {
+  .shop_content {
     margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 6rem;
-    width: fit-content;
+    width: 75rem;
+    gap: 2.5rem;
+    padding: 2.5rem 1.32rem;
+    justify-content: center;
+    align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    & > button {
-      background-color: transparent;
-      border: none;
-      font-weight: bold;
-      width: 100%;
-      justify-content: end;
-      padding: 0.5rem 1rem 2rem 0;
-    }
-  }
-
-  .product_list {
-    flex-direction: row;
-    padding: 1rem;
-  }
-
-  .hide_mobile {
-    display: flex;
   }
 
   .shop_subtitle {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding: 0;
     font-size: 2rem;
     font-weight: bold;
+  }
+
+  .product_categories {
+    gap: 0.62rem;
+    & button {
+      font-size: 1.25rem;
+      padding: 0.625rem 1.25rem;
+
+      &.btn_secundary {
+        padding: 0.94rem 1.56rem;
+      }
+    }
+  }
+
+  .shop_products {
+    overflow: hidden;
+    width: 100%;
+    & > button {
+      background-color: transparent;
+      border: none;
+      font-weight: bold;
+      width: 100%;
+      justify-content: end;
+      padding-top: 2.25rem;
+      font-size: 1.25rem;
+    }
+  }
+
+  .product_list {
+    flex-direction: row;
+    width: 100%;
+
+    & li {
+      width: 100%;
+      & > img {
+        display: flex;
+      }
+    }
+  }
+
+  .hide_mobile {
+    display: flex;
   }
 
   .input_search {
     display: flex;
     align-items: center;
     padding-left: 0.5rem;
-    margin-right: 1rem;
-    border-radius: 2rem;
+    border-radius: 3rem;
     background-color: #f4f4f4;
     gap: 0.3rem;
     & input {
@@ -105,7 +139,15 @@
       background-color: inherit;
       border-radius: inherit;
       outline: none;
+      width: 13rem;
       padding: 0.75rem 1rem 0.75rem 0.25rem;
+      font-size: 1.0625rem;
+      color: rgba(16, 24, 40, 0.38);
+    }
+
+    & svg {
+      width: 1.5rem;
+      height: 1.5rem;
     }
   }
 }
