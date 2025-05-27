@@ -35,6 +35,17 @@ document.querySelectorAll(".product_hover").forEach((card) => {
   });
 });
 
+// Coloca efeito de clique nos cards de serviços
+document.querySelectorAll(".service_hover").forEach((card) => {
+  card.addEventListener("click", function () {
+    document.querySelectorAll(".service_hover").forEach((el) => {
+      if (el !== card) el.classList.remove("active");
+    });
+
+    card.classList.toggle("active");
+  });
+});
+
 // Abre caixa de pesquisa da seção shop
 const searchIcon = document.getElementById("search_icon")!;
 

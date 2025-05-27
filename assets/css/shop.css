@@ -74,9 +74,25 @@
 }
 
 /* Config para hover e clique dos produtos */
-.product_hover section {
-  opacity: 0;
-  transition: opacity 0.3s ease;
+.product_hover {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  cursor: pointer;
+
+  padding: 1rem;
+  text-align: center;
+  z-index: 2;
+
+  & section {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
 }
 
 .product_hover::before {
@@ -100,24 +116,6 @@
 .product_hover:hover section,
 .product_hover.active section {
   opacity: 1;
-}
-
-.product_hover {
-  position: relative;
-  overflow: hidden;
-  color: white;
-  cursor: pointer;
-
-  padding: 1rem;
-  text-align: center;
-  z-index: 2;
-}
-
-.product_hover section {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  align-items: center;
 }
 
 .product_hover_footer {
