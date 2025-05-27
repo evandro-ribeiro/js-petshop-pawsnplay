@@ -23,3 +23,49 @@ window.addEventListener("scroll", () => {
     ? navbar.classList.add("background_navbar_with_scroll")
     : navbar.classList.remove("background_navbar_with_scroll");
 });
+
+// Coloca efeito de clique nos cards de produtos
+document.querySelectorAll(".product_hover").forEach((card) => {
+  card.addEventListener("click", function () {
+    document.querySelectorAll(".product_hover").forEach((el) => {
+      if (el !== card) el.classList.remove("active");
+    });
+
+    card.classList.toggle("active");
+  });
+});
+
+// Coloca efeito de clique nos cards de serviços
+document.querySelectorAll(".service_hover").forEach((card) => {
+  card.addEventListener("click", function () {
+    document.querySelectorAll(".service_hover").forEach((el) => {
+      if (el !== card) el.classList.remove("active");
+    });
+
+    card.classList.toggle("active");
+  });
+});
+
+// Abre caixa de pesquisa da seção shop
+const searchIcon = document.getElementById("search_icon")!;
+
+searchIcon.addEventListener("click", () => {
+  const inputSearch = document.querySelector(
+    ".input_search"
+  )! as HTMLInputElement;
+
+  inputSearch.classList.toggle("hide_mobile");
+});
+
+// Altera a categoria na seção shop
+const btnCategoryList = document.querySelectorAll(".btn_category")!;
+
+btnCategoryList.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    btnCategoryList.forEach((el) => {
+      if (el !== btn) el.classList.remove("btn_secundary");
+    });
+
+    btn.classList.toggle("btn_secundary");
+  });
+});
