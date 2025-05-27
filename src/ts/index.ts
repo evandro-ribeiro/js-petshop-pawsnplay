@@ -56,3 +56,16 @@ searchIcon.addEventListener("click", () => {
 
   inputSearch.classList.toggle("hide_mobile");
 });
+
+// Altera a categoria na seção shop
+const btnCategoryList = document.querySelectorAll(".btn_category")!;
+
+btnCategoryList.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    btnCategoryList.forEach((el) => {
+      if (el !== btn) el.classList.remove("btn_secundary");
+    });
+
+    btn.classList.toggle("btn_secundary");
+  });
+});
