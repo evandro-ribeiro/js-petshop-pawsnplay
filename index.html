@@ -877,20 +877,36 @@
               <div>
                 <label
                   >First name
-                  <input type="text" name="firstname" placeholder="First name"
+                  <input
+                    type="text"
+                    name="firstname"
+                    placeholder="First name"
+                    required
+                    minlength="2"
+                    maxlength="20"
                 /></label>
                 <label
                   >Last name
-                  <input type="text" name="lastname" placeholder="Last name"
+                  <input
+                    type="text"
+                    name="lastname"
+                    placeholder="Last name"
+                    required
+                    minlength="2"
+                    maxlength="30"
                 /></label>
               </div>
               <label
                 >Email
-                <input type="email" name="email" placeholder="you@company.com"
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="you@company.com"
+                  required
               /></label>
               <label>Message <textarea name="message"></textarea></label>
               <label id="form_checkbox">
-                <input type="checkbox" />
+                <input type="checkbox" required />
                 You agree to our friendly&nbsp;
                 <u> privacy policy</u>.
               </label>
