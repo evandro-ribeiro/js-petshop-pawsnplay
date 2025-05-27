@@ -6,13 +6,10 @@
     padding-top: 0.62rem;
     font-size: 0.9375rem;
   }
-  & hr {
-    opacity: 0.3;
-  }
   & h3 {
     color: #101828;
     font-size: 1.25rem;
-    font-weight: normal;
+    font-weight: bold;
     letter-spacing: -0.025rem;
   }
 
