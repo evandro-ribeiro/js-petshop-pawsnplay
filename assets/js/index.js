@@ -56,3 +56,22 @@ btnCategoryList.forEach((btn) => {
         btn.classList.toggle("btn_secundary");
     });
 });
+// Adiciona contador no hover dos produtos da seção shop
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".product_hover");
+    cards.forEach((card) => {
+        const btnPlus = card.querySelector(".plus_button");
+        const btnMinus = card.querySelector(".minus_button");
+        const qtySpan = card.querySelector(".product_qty");
+        btnPlus.addEventListener("click", () => {
+            let currentQty = parseInt(qtySpan.textContent);
+            qtySpan.textContent = (currentQty + 1).toString();
+        });
+        btnMinus.addEventListener("click", () => {
+            let currentQty = parseInt(qtySpan.textContent);
+            if (currentQty > 1) {
+                qtySpan.textContent = (currentQty - 1).toString();
+            }
+        });
+    });
+});

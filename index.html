@@ -217,9 +217,9 @@
                 </section>
                 <section class="product_hover_footer">
                   <section>
-                    <button>+</button>
-                    <span>1</span>
-                    <button>-</button>
+                    <button class="plus_button">+</button>
+                    <span class="product_qty">1</span>
+                    <button class="minus_button">-</button>
                   </section>
                   <button>Add to card</button>
                 </section>
@@ -258,9 +258,9 @@
                 </section>
                 <section class="product_hover_footer">
                   <section>
-                    <button>+</button>
-                    <span>1</span>
-                    <button>-</button>
+                    <button class="plus_button">+</button>
+                    <span class="product_qty">1</span>
+                    <button class="minus_button">-</button>
                   </section>
                   <button>Add to card</button>
                 </section>
@@ -299,9 +299,9 @@
                 </section>
                 <section class="product_hover_footer">
                   <section>
-                    <button>+</button>
-                    <span>1</span>
-                    <button>-</button>
+                    <button class="plus_button">+</button>
+                    <span class="product_qty">1</span>
+                    <button class="minus_button">-</button>
                   </section>
                   <button>Add to card</button>
                 </section>
@@ -920,6 +920,7 @@
                     required
                     minlength="2"
                     maxlength="20"
+                    autocomplete="off"
                 /></label>
                 <label
                   >Last name
@@ -930,6 +931,7 @@
                     required
                     minlength="2"
                     maxlength="30"
+                    autocomplete="off"
                 /></label>
               </div>
               <label
@@ -939,8 +941,11 @@
                   name="email"
                   placeholder="you@company.com"
                   required
+                  autocomplete="off"
               /></label>
-              <label>Message <textarea name="message"></textarea></label>
+              <label
+                >Message <textarea name="message" autocomplete="off"></textarea>
+              </label>
               <label id="form_checkbox">
                 <input type="checkbox" required />
                 You agree to our friendly&nbsp;
@@ -963,11 +968,11 @@
         </section>
 
         <form class="newsletter_form">
-          <input type="email" placeholder="Enter your email" /><button
-            type="submit"
-          >
-            Subscribe
-          </button>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            autocomplete="off"
+          /><button type="submit">Subscribe</button>
         </form>
       </section>
 
