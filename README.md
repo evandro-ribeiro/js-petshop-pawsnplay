@@ -1,11 +1,12 @@
-# 🚀 Desafio 2 — Trilha de Desenvolvimento FullStack | Compass UOL
+<img src="assets/img/banner-readme.png" alt="Banner de demonstração do projeto" />
+
+<hr />
+
+# 🚀 Projeto - Pet Shop Paws n' Play
 
 ## 🐾 Sobre o Projeto
 
-Este projeto faz parte do **Desafio 2** da trilha de **Desenvolvimento FullStack** da Compass UOL!  
-A proposta foi criar uma **landing page para um Pet Shop**, seguindo fielmente o layout fornecido no Figma pelos líderes.
-
-A ideia era colocar em prática conceitos fundamentais de **HTML, CSS e JavaScript**, com uma pitada de **TypeScript**, reforçando boas práticas de desenvolvimento, versionamento e organização de código.
+A proposta foi criar uma **landing page para o Pet Shop Paws n' Play**, seguindo fielmente o layout utilizado no Figma.
 
 ---
 
@@ -13,8 +14,7 @@ A ideia era colocar em prática conceitos fundamentais de **HTML, CSS e JavaScri
 
 - **HTML5** — estruturação semântica da página
 - **CSS3** — estilização responsiva e moderna
-- **JavaScript** — interatividade e comportamentos dinâmicos
-- **TypeScript** — usado para poder aplicar os conhecimentos obtidos na trilha
+- **JavaScript & TypeScript** — interatividade e comportamentos dinâmicos
 
 ---
 
@@ -29,6 +29,10 @@ O projeto foi organizado com foco em produtividade e escalabilidade, seguindo o 
 
 ---
 
-## 🙌 Agradecimentos
+## 🙌 Rodando o projeto
 
-Depois de uma sprint intensa, finalizei o projeto com muita alegria em ver o resultado final! É muito bom fazer parte de uma equipe que colabora, compartilha e cresce junto. Cada interação, dúvida respondida e ideia trocada fez toda a diferença no resultado final.
+Para iniciar o projeto, basta abrir o arquivo `index.html` em seu navegador que a página será renderizada.
+
+## Tamanhos de tela disponíveis
+
+Como base nos tamanhos de tela disponíveis no Figma, o projeto foi desenvolvido para **mobile em 390px** em **desktop em 1440px**
