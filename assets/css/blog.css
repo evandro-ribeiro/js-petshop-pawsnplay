@@ -36,7 +36,7 @@ u {
   font-family: "Formative Trial Light", Arial, sans-serif;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .blog_container {
     display: flex;
     justify-content: space-around;
@@ -56,10 +56,52 @@ u {
     width: 50%;
 
     & .blog_first_title {
+      font-size: 1.5rem;
+      line-height: 1rem;
+      letter-spacing: -0.045rem;
+    }
+
+    & h3 {
+      font-size: 1.25rem;
+    }
+
+    & p {
+      line-height: 120%;
+      padding: 0.5rem 0;
+      font-size: 1rem;
+    }
+
+    & .btn_secundary {
+      padding: 1rem 1.56rem;
+      font-size: 1rem;
+      line-height: 100%;
+    }
+  }
+
+  .blog_container_content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+
+    margin-top: 2.75rem;
+
+    & > img {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .blog_content {
+    margin: 0;
+    width: 50%;
+
+    & .blog_first_title {
       padding: 0 0 3rem 0;
       font-size: 2.25rem;
       line-height: 2.75rem;
-      letter-spacing: -0.045rem;
     }
 
     & .blog_second_title {
@@ -81,20 +123,6 @@ u {
       font-size: 1.25rem;
       margin: 1.5rem 0;
       line-height: 100%;
-    }
-  }
-
-  .blog_container_content {
-    display: flex;
-    width: 80rem;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 4rem;
-
-    margin-top: 2.75rem;
-
-    & > img {
-      height: 40.5625rem;
     }
   }
 }
