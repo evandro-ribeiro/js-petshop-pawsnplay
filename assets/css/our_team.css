@@ -45,15 +45,14 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   #team > .section_title {
     margin-bottom: 2.75rem;
   }
 
   .team_list {
     gap: 2rem;
-    width: 80rem;
-    padding: 0rem 2rem;
+    width: 100%;
     & li {
       width: fit-content;
     }
