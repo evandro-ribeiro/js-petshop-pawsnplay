@@ -55,12 +55,13 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .hero {
     background-image: url("../img/dog_hero.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 55.1875rem;
+    background-position: center;
+    height: 100vh;
 
     & h1,
     p {
@@ -94,5 +95,11 @@
     border-radius: 3.125rem;
     border: 1px solid #fff;
     background: rgba(105, 65, 198, 0);
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero {
+    height: 55.1875rem;
   }
 }
