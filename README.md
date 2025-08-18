@@ -14,7 +14,7 @@ A proposta foi criar uma **landing page para o Pet Shop Paws n' Play**, seguindo
 
 - **HTML5** — estruturação semântica da página
 - **CSS3** — estilização responsiva e moderna
-- **JavaScript & TypeScript** — interatividade e comportamentos dinâmicos
+- **JavaScript** — interatividade e comportamentos dinâmicos
 
 ---
 
@@ -35,4 +35,4 @@ Para iniciar o projeto, basta abrir o arquivo `index.html` em seu navegador que 
 
 ## Tamanhos de tela disponíveis
 
-Como base nos tamanhos de tela disponíveis no Figma, o projeto foi desenvolvido para **mobile em 390px** em **desktop em 1440px**
+Como base nos tamanhos de tela disponíveis no Figma, o projeto foi desenvolvido para **mobile em 390px** e para **desktop em 1024px e 1440px**.
