@@ -134,15 +134,15 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .service_list {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
     grid-template-areas:
       "grooming boarding adoption"
       "veterinary training adoption";
-    height: 48rem;
-    width: 75.0625rem;
+    height: 90vh;
+    width: 95%;
     border: 1px solid rgba(0, 0, 0, 0.3);
     padding: 1.6875rem 1.875rem 1.625rem 1.875rem;
     margin: auto;
@@ -163,9 +163,15 @@
     }
   }
 
-  .service_hover_content > button {
-    padding: 0.9375rem 1.5625rem;
-    font-size: 1.25rem;
+  .service_hover_content {
+    gap: 0.5rem;
+    & > p {
+      font-size: 0.8rem;
+    }
+    & > button {
+      padding: 0.7rem 1rem;
+      font-size: 1rem;
+    }
   }
 
   .service_hover:hover,
@@ -175,6 +181,19 @@
       p {
         display: flex;
       }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .service_hover_content {
+    gap: 1.5rem;
+    & > p {
+      font-size: 1rem;
+    }
+    & > button {
+      padding: 0.9375rem 1.5625rem;
+      font-size: 1.25rem;
     }
   }
 }
